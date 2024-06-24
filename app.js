@@ -19,6 +19,12 @@ runBtn.addEventListener('click', function() {
     modalBg.classList.add('open');
 })
 
+window.addEventListener('keydown', function(e) {
+    if(e.key === "Escape") {
+        menuModal.classList.remove('open')
+    }
+})
+
 modalClose.addEventListener('click', function () {
     if(menuModal.classList.contains('open')) {
         menuModal.classList.remove('open')
